@@ -1,5 +1,6 @@
 ﻿using System;
 using Models;
+using Services;
 
 namespace spades_console
 {
@@ -14,13 +15,16 @@ namespace spades_console
 
             //Create game
             var game = new Game(team1, team2);
+            var gameService = new GameService(game);
 
             //Start the game
-            game.StartGame();
-            game.DisplayTeamBets(game.Team1);
-            game.DisplayTeamBets(game.Team2);
+            gameService.StartGame();
+            
             // Console.WriteLine(game.Rounds.Count);
             // Console.WriteLine(team1.Player1.Bets[0].Books);
+
+            // Notes
+            // Do I need a service for each model?
         }
     }
 }
