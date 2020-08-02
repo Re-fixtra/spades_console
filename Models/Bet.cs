@@ -5,5 +5,6 @@ namespace Models
         public bool IsNil { get; set; }
         public bool IsBlindNil { get; set; }
         public int Books { get; set; }
+        public int Actual { get; set; }
     }
 }

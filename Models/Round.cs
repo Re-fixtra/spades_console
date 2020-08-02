@@ -4,8 +4,8 @@ namespace Models
     {
         public Bet Team1_Bet { get; set; }
         public Bet Team2_Bet { get; set; }
-        public Bet Team1_Actual { get; set; }
-        public Bet Team2_Actual { get; set; }
+        public int Team1_Actual { get; set; }
+        public int Team2_Actual { get; set; }
         public int Team1_RoundScore { get; set; }
         public int Team2_RoundScore { get; set; }
         public int Team1_TotalScore { get; set; }
