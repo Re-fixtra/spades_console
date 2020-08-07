@@ -49,7 +49,12 @@ namespace Models
             Console.WriteLine("Bets for Team");
             Console.WriteLine($"Name: {team.Player1.Name} - Bet: {team.Player1.Bets[Rounds.Count].Books}");
             Console.WriteLine($"Name: {team.Player2.Name} - Bet: {team.Player2.Bets[Rounds.Count].Books}");
-            Console.WriteLine($"Total Bet: {team.Player1.Bets[Rounds.Count].Books + team.Player2.Bets[Rounds.Count].Books}");
+            Console.WriteLine($"Total Bet: {team.Player1.Bets[Rounds.Count].Books + team.Player2.Bets[Rounds.Count].Books}\n");
+        }
+
+        public int GetCurrentRoundNumber()
+        {
+            return Rounds.Count + 1;
         }
     }
 }
